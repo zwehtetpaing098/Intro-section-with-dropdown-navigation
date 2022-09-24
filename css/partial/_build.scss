@@ -1,0 +1,186 @@
+.back {
+    background-color: $AlmostBlack;
+    display: none;
+    z-index: 1;
+    opacity: 0.5;
+    position: fixed;
+}
+
+nav {
+    .logo {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .nav-link {
+        font-size: 1.6rem;
+        color: $MediumGray;
+        padding: 10px 30px;
+        font-weight: 500;
+        transition: all 0.5s;
+    }
+
+    .nav-link:hover {
+        color: $AlmostBlack;
+    }
+
+    .register {
+        border: 2px solid $MediumGray;
+        border-radius: 15px;
+        transition: all 0.5s;
+    }
+
+    .register:hover {
+        border-color: $AlmostBlack;
+    }
+
+    .dropdown-menu {
+        border: none;
+        box-shadow: 0px 5px 30px 5px rgba($color: #000000, $alpha: 0.1);
+        .dropdown-item{
+            font-size: 1.6rem;
+        }
+    }
+
+    ul {
+        li:first-child {
+            .dropdown-menu {
+                margin-top: 8px;
+                width: 160px;
+            }
+        }
+        li:nth-child(2) {
+            .dropdown-menu {
+                margin-top: 8px;
+                margin-left: 30px;
+            }
+        }
+    }
+
+}
+
+
+.inner-about {
+    width: 80%;
+    height: 80%;
+    
+    .title-1 {
+        font-size: 10rem;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    
+    p {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    
+    .learn {
+        margin-bottom: 50px;
+        width: 200px;
+        background-color: $AlmostBlack;
+        font-size: 2rem;
+        color: $AlmostWhite;
+        cursor: pointer;
+        transition: all 0.5s;
+        font-weight: 700;
+    }
+    
+    .learn:hover {
+        background-color: $AlmostWhite;
+        color: $AlmostBlack;
+    }
+
+    .logos {
+        margin-top: auto;
+    }    
+    
+}
+
+
+.img {
+
+    .inner-img {
+        width: 80%;
+        height: 80%;
+
+        div{
+            width: 100%;
+            height: 100%;
+            background-image: url(../../images/image-hero-desktop.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .mobile-img {
+        object-fit: contain;
+    }
+    
+}    
+
+.active {
+    right: 0;
+}
+
+.Features, .Company{
+    cursor: pointer;
+}
+
+.features, .company {
+    display: none;
+}
+
+@media(max-width:1610px) {
+    .inner-about .title-1 {
+        font-size: 8rem;
+    }
+}
+
+@media(max-width:1300px) {
+    .inner-about .title-1 {
+        font-size: 6rem;
+    }
+}
+
+@media(max-width:565px) {
+    .inner-about .title-1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media(max-width:991px) {
+    .inner-about {
+        width: 100%;
+        p {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+    .sidebar {
+        z-index: 3;
+        display: none;
+        position: fixed;
+        width: 300px;
+        transition: right 1s;
+        .close {
+            margin-top: 24px;
+            margin-left: 83%;
+        }
+        ul {
+            margin-top: 100px;
+            height: 100vh;
+
+            li {
+                color: $MediumGray;
+            }
+
+            .Register {
+                width: 200px;
+                border: 2px solid $MediumGray;
+                border-radius: 15px;
+            }
+        }
+    }
+}

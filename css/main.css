@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+ul, li {
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.back {
+  background-color: #141414;
+  display: none;
+  z-index: 1;
+  opacity: 0.5;
+  position: fixed;
+}
+
+nav .logo {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+nav .nav-link {
+  font-size: 1.6rem;
+  color: #696969;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+nav .nav-link:hover {
+  color: #141414;
+}
+nav .register {
+  border: 2px solid #696969;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+nav .register:hover {
+  border-color: #141414;
+}
+nav .dropdown-menu {
+  border: none;
+  box-shadow: 0px 5px 30px 5px rgba(0, 0, 0, 0.1);
+}
+nav .dropdown-menu .dropdown-item {
+  font-size: 1.6rem;
+}
+nav ul li:first-child .dropdown-menu {
+  margin-top: 8px;
+  width: 160px;
+}
+nav ul li:nth-child(2) .dropdown-menu {
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+.inner-about {
+  width: 80%;
+  height: 80%;
+}
+.inner-about .title-1 {
+  font-size: 10rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.inner-about p {
+  width: 80%;
+  margin-bottom: 50px;
+}
+.inner-about .learn {
+  margin-bottom: 50px;
+  width: 200px;
+  background-color: #141414;
+  font-size: 2rem;
+  color: #fafafa;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 700;
+}
+.inner-about .learn:hover {
+  background-color: #fafafa;
+  color: #141414;
+}
+.inner-about .logos {
+  margin-top: auto;
+}
+
+.img .inner-img {
+  width: 80%;
+  height: 80%;
+}
+.img .inner-img div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/image-hero-desktop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img .mobile-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.active {
+  right: 0;
+}
+
+.Features, .Company {
+  cursor: pointer;
+}
+
+.features, .company {
+  display: none;
+}
+
+@media (max-width: 1610px) {
+  .inner-about .title-1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 1300px) {
+  .inner-about .title-1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 565px) {
+  .inner-about .title-1 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .inner-about {
+    width: 100%;
+  }
+  .inner-about p {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .sidebar {
+    z-index: 3;
+    display: none;
+    position: fixed;
+    width: 300px;
+    transition: right 1s;
+  }
+  .sidebar .close {
+    margin-top: 24px;
+    margin-left: 83%;
+  }
+  .sidebar ul {
+    margin-top: 100px;
+    height: 100vh;
+  }
+  .sidebar ul li {
+    color: #696969;
+  }
+  .sidebar ul .Register {
+    width: 200px;
+    border: 2px solid #696969;
+    border-radius: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */

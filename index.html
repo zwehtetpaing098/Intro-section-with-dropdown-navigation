@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    .attribution { font-size: 1.8rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+  <!-- background changes -->
+  <div class="back vh-100 vw-100 d-lg-none"></div>
+
+  <!-- nav -->
+  <div class="d-flex d-lg-block justify-content-between">
+
+    <nav class="navbar">
+      <!-- logo -->
+      <div class="logo navbar-brand ms-5">snap</div>
+      <!-- nav-tags1 -->
+      <ul class="nav me-auto d-none d-lg-flex">
+        <!-- Features -->
+        <li class="nav-item ps-5 dropdown">
+          <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button">Features <span><img src="images/icon-arrow-down.svg" alt=""></span></a>
+          <ul class="dropdown-menu rounded-4 px-5">
+            <li class="d-flex align-items-center pt-3">
+              <div><img src="images/icon-todo.svg" alt=""></div>
+              <a class="dropdown-item" href="#"> Todo List</a>
+            </li>
+            <li class="d-flex align-items-center pt-3">
+              <div><img src="images/icon-calendar.svg" alt=""></div>
+              <a class="dropdown-item" href="#">Calendar</a>
+            </li>
+            <li class="d-flex align-items-center pt-3">
+              <div><img src="images/icon-reminders.svg" alt=""></div>
+              <a class="dropdown-item" href="#">Reminders</a>
+            </li>
+            <li class="d-flex align-items-center py-3">
+              <div><img src="images/icon-planning.svg" alt=""></div>
+              <a class="dropdown-item" href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Company -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button">Company <span><img src="images/icon-arrow-down.svg" alt=""></span></a>
+          <ul class="dropdown-menu rounded-4 p-4">
+            <li><a class="dropdown-item" href="#">History</a></li>
+            <li><a class="dropdown-item py-3" href="#">Our Team</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+        </li>
+        <!-- Carrers -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Careers</a>
+        </li>
+        <!-- About -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <!-- nav-tags2 -->
+      <ul class="nav me-5 d-none d-lg-flex">
+        <li class="nav-item me-5">
+          <a class="login nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="register nav-link" href="#">Register</a>
+        </li>
+      </ul>
+      
+    </nav>
+    
+    <!-- toggle -->
+    <button class="toggle navbar-toggler d-lg-none me-5">
+      <img src="images/icon-menu.svg" alt="">
+    </button>
+    
+    <!-- sidebar -->
+    <div class="sidebar bg-white d-lg-none">
+      <!-- close toggle -->
+      <button class="close navbar-toggler">
+        <img src="images/icon-close-menu.svg" alt="">
+      </button>
+      <!-- Features -->
+      <ul class="d-flex flex-column d-lg-none">
+        <li class="Features mt-5">Features <img class="ms-4" src="images/icon-arrow-down.svg" alt=""></li>
+        <li class="features ms-5 mt-4">
+          <div>
+            <img src="images/icon-todo.svg" alt="">
+            <a class="ms-3" href="#">Todo List</a>
+          </div>
+          <div class="mt-4">
+            <img src="images/icon-calendar.svg" alt="">
+            <a class="ms-3" href="#">Calendar</a>
+          </div>
+          <div class="mt-4">
+            <img src="images/icon-reminders.svg" alt="">
+            <a class="ms-3" href="#">Reminders</a>
+          </div>
+          <div class="mt-4">
+            <img src="images/icon-planning.svg" alt="">
+            <a class="ms-3" href="#">Planning</a>
+          </div>
+        </li>
+        <!-- Company -->
+        <li class="Company mt-5">Company <img class="ms-4" src="images/icon-arrow-down.svg" alt=""></li>
+        <li class="company ms-5 mt-4">
+          <div>History</div>
+          <div class="mt-4">Our Team</div>
+          <div class="mt-4">Blog</div>
+        </li>
+        <!-- Carrers -->
+        <li class="mt-5">Careers</li>
+        <!-- About -->
+        <li class="mt-5">About</li>
+
+        <!-- Login -->
+        <a class="d-flex justify-content-center mt-5" href="#">Login</a>
+        <!-- Reginster -->
+        <a class="Register d-flex justify-content-center mt-5 p-3 m-auto" href="#">Register</a>
+      </ul>
+    </div>
+
+  </div>
+  
+  <!-- body -->
+  <div class="home row vh-100 m-auto">
+    
+    <div class="about d-flex col-lg-6 order-lg-1 order-2">
+      <div class="inner-about d-flex flex-column my-lg-5 ms-lg-auto">
+
+        <h1 class="title-1 mt-auto d-lg-inline d-none">Make <br>remote work</h1>
+        <h1 class="title-1 mt-auto pb-5 my-auto d-lg-none d-lg-inline-block mx-auto">Make remote work</h1>
+        <p class="text-lg-start">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <div class="d-flex justify-content-center justify-content-lg-start pt-5">
+          <a class="learn d-flex justify-content-center p-4 rounded-5 border border-dark" href="#">Learn more</a>
+        </div>
+
+        <div class="row logos">
+          <div class="col-3 "><img src="images/client-databiz.svg" alt=""></div>
+          <div class="col-3"><img src="images/client-audiophile.svg" alt=""></div>
+          <div class="col-3"><img src="images/client-meet.svg" alt=""></div>
+          <div class="col-3 "><img src="images/client-maker.svg" alt=""></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="img d-flex col-lg-6 order-lg-2 order-1">
+      <div class="inner-img my-lg-5 d-lg-flex d-none">
+        <div></div>
+      </div>
+      <img class="mobile-img w-100 d-lg-none d-flex" src="./images/image-hero-mobile.png" alt="">
+    </div>
+    
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
